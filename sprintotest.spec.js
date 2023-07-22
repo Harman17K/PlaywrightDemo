@@ -18,5 +18,5 @@ test('flightbookingtest', async ({page})=> {
         await page.locator("(//div[@class='flex']//button)[1]").click()
     ]);
     await newtab.locator("//div[contains(@class,'px-1')]").click()  // using new tab page object to close the Signin popup
-    await newtab.locator("//h2[contains(text(),'Review your itinerary')]").isDisabled()
+    await newtab.locator("//h2[contains(text(),'Review your itinerary')]").isVisible()
 })
